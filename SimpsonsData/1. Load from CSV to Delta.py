@@ -38,13 +38,7 @@ def write_simpsons_df_to_delta(df, delta_path, partition_by=None):
 
 # COMMAND ----------
 
-
 write_simpsons_df_to_delta(character_df, f"{delta_path}/Characters")
 write_simpsons_df_to_delta(episodes_df, f"{delta_path}/Episodes",partition_by="season")
 write_simpsons_df_to_delta(locations_df, f"{delta_path}/Locations")
 write_simpsons_df_to_delta(scriptlines_df, f"{delta_path}/ScriptLines")
-
-
-# COMMAND ----------
-
-
